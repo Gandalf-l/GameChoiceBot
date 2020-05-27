@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters import Command
 from loader import dp
 from states.test import Test
 
-from handlers.users.btm import genres, price, platform, operatingSystem, languages
+from handlers.users.btm import genres, price, platform, operatingSystem, languages, start
 
 import requests
 import json
@@ -105,7 +105,7 @@ async def answer_q2(message: Message, state: FSMContext):
       text += str(i + 1) + ") " + str(x['name']) + " - " + str(x['price']) + ' $\n'
 
 
-  await message.answer(text, reply_markup=ReplyKeyboardRemove())
+  await message.answer(text, reply_markup=start)
 
   # Вариант 1
   await state.finish()

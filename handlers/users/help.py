@@ -14,7 +14,6 @@ async def bot_help(message: types.Message):
     'List command: ',
     '/start - Start a dialogue',
     '/help - Get help',
-    '/recommend - Get recommend',
-    str(message.values['from'].id)
+    '/recommend - Get recommend'
   ]
   await message.answer('\n'.join(text))

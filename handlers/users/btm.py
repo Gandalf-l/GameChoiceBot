@@ -123,3 +123,37 @@ languages = ReplyKeyboardMarkup(
   ],
   resize_keyboard=True
 )
+
+start = ReplyKeyboardMarkup(
+  keyboard=[
+    [
+      KeyboardButton(text="Subscription"),
+      KeyboardButton(text="Recommend")
+    ]
+  ],
+  resize_keyboard=True
+)
+
+subscribe = ReplyKeyboardMarkup(
+  keyboard=[
+    [
+      KeyboardButton(text="Subscribe to newsletter")
+    ],
+    [
+      KeyboardButton(text="Back")
+    ]
+  ],
+  resize_keyboard=True
+)
+
+unsubscribe = ReplyKeyboardMarkup(
+  keyboard=[
+    [
+      KeyboardButton(text="Unsubscribe to newsletter")
+    ],
+    [
+      KeyboardButton(text="Back")
+    ]
+  ],
+  resize_keyboard=True
+)
